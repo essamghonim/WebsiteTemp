@@ -10,6 +10,9 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
+app.get('/pleasework', function(request, response) {
+  response.sendFile(__dirname + '/views/index.html');
+});
 app.all('/*', function(req, res, next) 
 {
   // CORS headers
